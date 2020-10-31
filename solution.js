@@ -19,7 +19,7 @@ let first = groups[j][0];
 if(first.length>=i){
 let newgroup = [first];
 for(let k=1;k<groups[j].length;k++){
-if(groups[j][k][i] === first[i]){
+if(first[i] && groups[j][k][i] && groups[j][k][i] === first[i]){
 high=i;
 newgroup.push(groups[j][k]);
 groups[j].splice(k,1);
